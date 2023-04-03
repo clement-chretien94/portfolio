@@ -1,0 +1,44 @@
+.projects {
+    width: 1246px;
+    .title {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 45px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        span {
+            border: 1px solid var(--primary);
+            width: 500px;
+            height: 0;
+        }
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 274.29px);
+        gap: 32px;
+        
+        .seeMore {
+            // Alignement
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // Texte
+            color: var(--primary);
+            font-size: 45px;
+            font-weight: 600;
+            // Apparence de la div
+            background-color: transparent;
+            border: 4px solid var(--primary);
+            width: 274.29px;
+            height: 154.29px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    }
+}

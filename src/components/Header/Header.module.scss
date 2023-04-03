@@ -1,0 +1,36 @@
+header {
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 64px;
+    height: 96px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+header nav {
+    width: 652px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a:hover {
+    color: var(--primary);
+    transition: color 0.5s;
+}
+
+.cv {
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+    border-style: solid;
+    padding: 4px 8px;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 5px;
+}

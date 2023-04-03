@@ -1,0 +1,110 @@
+.contact {
+    margin-top: 0;
+    width: 1246px;
+    display: flex;
+
+    .textForm {
+        width: 520px;
+        margin-right: 18px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        font-size: 45px;
+        color: var(--primary);
+        font-weight: 600;
+        margin-right: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        color: var(--text-color);
+        font-weight: 400;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 338px);
+        gap: 32px;
+    }
+
+    .field {
+        grid-column: 0.5;
+        display: flex;
+        flex-direction: column;
+        label {
+            font-size: 23px;
+            color: var(--text-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        textarea, input {
+            background-color: var(--text-color);
+            padding: 16px 24px;
+            color: var(--bg-color);
+            font-weight: 400;
+            font-size: 16px;
+            height: 56px;
+            border: none;
+            border-radius: 8px;
+
+            &::placeholder {
+                color: var(--bg-color);
+            }
+
+            &:focus-visible {
+                outline: var(--primary) solid ;
+            }
+        }
+    }
+
+    .textArea {
+        grid-column: 1;
+        textarea {
+            width: 708px;
+            height: 220px;
+            font-family: var(--font-family);
+            resize: none;
+        }
+    }
+
+    button {
+        grid-column: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        font-size: 23px;
+        background-color: transparent;
+        border: 4px solid var(--primary);
+        border-radius: 100px;
+        padding: 16px 48px;
+        width: 708px;
+        height: 62px;
+
+        span {
+            margin-right: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .inConstruction {
+        font-size: 40px;
+        color: #ec4953;
+    }
+}
+
+.inConstruction2 {
+    margin-top: 256px;
+    margin-bottom: 16px;
+    width: 1246px;
+
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #ec4953;
+    color: #fff;
+}

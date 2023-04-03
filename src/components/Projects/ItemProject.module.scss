@@ -1,0 +1,30 @@
+.itemProject {
+    background-color: var(--text-color);
+    height: 154.29px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--bg-color);
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    .imageProject {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        height: 120.29px;
+        overflow: hidden;
+        img {
+            transition: transform 1s;
+        }
+    }
+
+    &:hover {
+        background-color: var(--primary);
+        .imageProject {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

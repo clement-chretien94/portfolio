@@ -1,0 +1,69 @@
+.education {
+    width: 1246px;
+    .title {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 45px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        span {
+            border: 1px solid var(--primary);
+            width: 500px;
+            height: 0;
+        }
+    }
+
+    .content {
+        h2 {
+            font-size: 32px;
+            color: rgba($color: #00b9ff, $alpha: 0.75);
+            font-weight: 600;
+            text-decoration: underline;
+            margin-bottom: 16px;
+        }
+
+        .part1 {
+            margin-bottom: 64px;
+            h3 {
+                font-size: 23px;
+                font-weight: 600;
+            }
+    
+            h4 {
+                font-size: 23px;
+                color: rgba($color: #c5c6c7, $alpha: 0.75);
+                font-weight: 600;
+            }
+    
+            ul {
+                margin-top: 8px;
+                font-size: 23px;
+                font-weight: 400;
+            }
+        }
+
+        .part2 {
+            h3 {
+                font-size: 23px;
+                font-weight: 600;
+            }
+    
+            h4 {
+                font-size: 23px;
+                color: rgba($color: #c5c6c7, $alpha: 0.75);
+                font-weight: 600;
+            }
+    
+            ul {
+                margin-top: 8px;
+                font-size: 23px;
+                font-weight: 400;
+            }
+        }
+    }
+}

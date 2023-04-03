@@ -1,0 +1,26 @@
+.tabsContent {
+    display: flex;
+    justify-content: space-between;
+    .element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: var(--text-color);
+        width: 236.4px;
+        height: 147px;
+        border-radius: 8px;
+
+        img {
+            height: 48px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 23px;
+            font-weight: 600;
+            color: var(--bg-color);
+        }
+    }
+}

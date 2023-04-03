@@ -1,0 +1,19 @@
+.content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 274.29px);
+    gap: 32px;
+}
+
+.backspaceBtn {
+    margin: 16px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: none;
+    width: 58px;
+    height: 58px;
+    path {
+        fill: var(--primary);
+        stroke: var(--primary);
+    }
+}

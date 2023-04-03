@@ -1,0 +1,35 @@
+.heroArea {
+    width: 1246px;
+    h3 {
+        color: var(--primary);
+        font-size: 45px;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    h2 {
+        color: rgba($color: #c5c6c7, $alpha: 0.75);
+        font-size: 63px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    a {
+        display: flex;
+        color: var(--primary);
+        font-size: 23px;
+        font-weight: 700;
+
+        img {
+            margin-left: 8px;
+        }
+    }
+}

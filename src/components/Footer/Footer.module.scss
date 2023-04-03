@@ -1,0 +1,36 @@
+footer {
+    border-top: 1px var(--text-color) solid;
+    margin-top: 256px;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        margin-top: 32px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .socialMedia {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin-right: 32px;
+
+            &:hover {
+                path {
+                    // fill: var(--primary);
+                    stroke: var(--primary);
+                }
+            }
+
+            .github:hover {
+                path {
+                    fill: var(--primary);
+                    stroke: none;
+                }
+            }
+        }
+    }
+}
