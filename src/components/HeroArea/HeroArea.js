@@ -1,4 +1,4 @@
-import styles from './HeroArea.module.scss';
+import styles from "./HeroArea.module.scss";
 import downnwardIcon from "../../assets/images/downnward-icon.svg";
 
 function HeroArea() {
@@ -6,11 +6,17 @@ function HeroArea() {
     <section className={styles.heroArea}>
       <h3>Salut, je m'appelle</h3>
       <h1>Clément Chrétien</h1>
-      <h2>I experiment things with my computer</h2>
-      <p>Je suis lycéen et développeur à mes heures perdues.<br/>J'aime créer toutes sortes de choses avec mon ordinateur.</p>
-      <a href='#projects'>
+      <h2>I love learning new things</h2>
+      <p>
+        Je suis étudiant en 2ème année de BUT Informatique et j'aime apprendre
+        de nouvelles technologies et outils.
+        <br />
+        J'aime réalisers des projets personnels pour améliorer mes compétences
+        et découvrir de nouvelles technologies.
+      </p>
+      <a href="#projects">
         Voir mes projets
-        <img width="32px" src={downnwardIcon} alt="downnwardIcon"/>
+        <img width="32px" src={downnwardIcon} alt="downnwardIcon" />
       </a>
     </section>
   );
