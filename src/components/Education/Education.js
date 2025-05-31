@@ -11,7 +11,7 @@ function Education() {
       <div className={styles.content}>
         <h2>Expérience professionel</h2>
         <div className={styles.part1}>
-          <h3>Stage en dévellopement Informatique</h3>
+          <h3>Stage en développement Informatique</h3>
           <h4>ATOS // Avril 2025 - Juin 2025</h4>
           <ul>
             <li>
