@@ -11,6 +11,16 @@ function Education() {
       <div className={styles.content}>
         <h2>Expérience professionel</h2>
         <div className={styles.part1}>
+          <h3>Alternance en développement Informatique</h3>
+          <h4>DN CONSULTANTS // Septembre 2025 - En cours</h4>
+          <ul>
+            <li>
+              • Développement d'une solution de traitement des données
+              touristiques
+            </li>
+          </ul>
+        </div>
+        <div className={styles.part1}>
           <h3>Stage en développement Informatique</h3>
           <h4>ATOS // Avril 2025 - Juin 2025</h4>
           <ul>
@@ -23,7 +33,7 @@ function Education() {
         <h2>Formation</h2>
         <div className={styles.part1}>
           <h3>BUT Informatique</h3>
-          <h4>IUT ROBERT SCHUMAN // 2023 - EN COURS</h4>
+          <h4>IUT ROBERT SCHUMAN // 2023 - En cours</h4>
           <ul>
             <li>
               • BUT Informatique, Parcours : Réalisation d'applications :

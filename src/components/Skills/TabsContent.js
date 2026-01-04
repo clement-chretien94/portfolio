@@ -1,7 +1,9 @@
 import styles from "./TabsContent.module.scss";
 import reactLogo from "../../assets/images/skillsLogo/React.svg";
+import vueLogo from "../../assets/images/skillsLogo/VueJS.svg";
 import nextjsLogo from "../../assets/images/skillsLogo/NextJS.svg";
 import djangoLogo from "../../assets/images/skillsLogo/Django.svg";
+import symfonyLogo from "../../assets/images/skillsLogo/Symfony.svg";
 import javascriptLogo from "../../assets/images/skillsLogo/JavaScript.png";
 import typescriptLogo from "../../assets/images/skillsLogo/TypeScript.svg";
 import tailwindLogo from "../../assets/images/skillsLogo/TailwindCSS.svg";
@@ -21,6 +23,11 @@ function TabsContent({ selected }) {
         </div>
 
         <div className={styles.element}>
+          <img src={vueLogo} alt="Vue.js Logo" />
+          <h3>Vue.js</h3>
+        </div>
+
+        <div className={styles.element}>
           <img src={reactLogo} alt="React Native Logo" />
           <h3>React Native</h3>
         </div>
@@ -33,6 +40,11 @@ function TabsContent({ selected }) {
         <div className={styles.element}>
           <img src={djangoLogo} alt="Django Logo" />
           <h3>Django</h3>
+        </div>
+
+        <div className={styles.element}>
+          <img src={symfonyLogo} alt="Symfony Logo" />
+          <h3>Symfony</h3>
         </div>
 
         <div className={styles.element}>
