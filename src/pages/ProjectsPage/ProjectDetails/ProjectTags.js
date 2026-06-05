@@ -21,6 +21,8 @@ function ProjetTags({ makeWith }) {
         return styles.figma;
       case "Unity":
         return styles.unity;
+      default:
+        return "";
     }
   }
 

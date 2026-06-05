@@ -1,36 +1,46 @@
 footer {
-    border-top: 1px var(--text-color) solid;
-    margin-top: 256px;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--section-gap);
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
 
-    h2 {
-        margin-top: 32px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .socialMedia {
-        margin-top: 16px;
-        margin-bottom: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-            margin-right: 32px;
+  h2 {
+    margin-top: 0;
+    font-size: 0.98rem;
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+  .socialMedia {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    a {
+      margin-right: 0;
+      opacity: 0.78;
+      transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
 
-            &:hover {
-                path {
-                    // fill: var(--primary);
-                    stroke: var(--primary);
-                }
-            }
+      &:hover {
+        opacity: 1;
+        transform: translateY(-1px);
 
-            .github:hover {
-                path {
-                    fill: var(--primary);
-                    stroke: none;
-                }
-            }
+        path {
+          stroke: var(--primary);
         }
+      }
+
+      .github:hover {
+        path {
+          fill: var(--primary);
+          stroke: none;
+        }
+      }
     }
+  }
 }

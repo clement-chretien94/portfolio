@@ -1,11 +1,12 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
+import styles from "./ProjectsPage.module.scss";
 
 function ProjectsPage() {
   return (
-    <>
-      <Outlet/>
-    </>
-  )
+    <main className={styles.projectsPage}>
+      <Outlet />
+    </main>
+  );
 }
 
 export default ProjectsPage;

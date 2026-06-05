@@ -1,45 +1,67 @@
 .skills {
-    width: 1246px;
-    .title {
-        margin-bottom: 16px;
-        display: flex;
-        align-items: center;
-        h1 {
-            font-size: 45px;
-            color: var(--primary);
-            font-weight: 600;
-            margin-right: 8px;
-        }
+  padding: clamp(28px, 3vw, 40px);
+  border-radius: 28px;
+  background: rgba(16, 26, 39, 0.72);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-soft);
 
-        span {
-            border: 1px solid var(--primary);
-            width: 500px;
-            height: 0;
-        }
+  .title {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    h1 {
+      font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+      color: var(--primary);
+      font-weight: 700;
+      margin-right: 0;
     }
 
-    .content {
-        .tabsLink {
-            display: flex;
-            margin-bottom: 32px;
-            h2 {
-                font-size: 32px;
-                color: rgba($color: #c5c6c7, $alpha: 0.75);
-                font-weight: 600;
-                margin-right: 64px;
-                text-decoration: underline transparent;
-                cursor: pointer;
-                transition: all 0.2s;
-                &:not(.selected):hover {
-                    color: var(--text-color);
-                    text-decoration: underline;
-                }
-            }
-
-            .selected {
-                color: rgba($color: #00b9ff, $alpha: 0.75);
-                text-decoration: underline;
-            }
-        }
+    span {
+      flex: 1;
+      border: none;
+      width: auto;
+      height: 0;
+      border-top: 1px solid var(--border-color);
+      background: linear-gradient(90deg, rgba(0, 194, 255, 0.55), transparent);
     }
+  }
+
+  .content {
+    .tabsLink {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 32px;
+
+      h2 {
+        font-size: clamp(1rem, 1.6vw, 1.2rem);
+        color: var(--text-muted);
+        font-weight: 600;
+        margin-right: 0;
+        padding: 12px 18px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        background: rgba(255, 255, 255, 0.03);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:not(.selected):hover {
+          color: var(--text-color);
+          border-color: rgba(138, 194, 233, 0.18);
+          background: rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      .selected {
+        color: var(--bg-color);
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-soft) 100%
+        );
+      }
+    }
+  }
 }

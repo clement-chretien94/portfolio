@@ -1,9 +1,11 @@
 .projectTag {
-  margin-left: 32px;
-  padding: 16px;
-  font-size: 24px;
-  color: var(--bg-color);
-  border-radius: 25px;
+  margin-left: 0;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #071018;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
 }
 
 .electron {

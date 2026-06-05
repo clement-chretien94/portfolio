@@ -1,69 +1,108 @@
 html {
-    scroll-padding-top: 150px;
-    scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: var(--font-family);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-image:
+    radial-gradient(
+      circle at top left,
+      rgba(0, 194, 255, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(140, 236, 255, 0.08),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(0, 194, 255, 0.06),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #070b10 0%, #09111a 100%);
+  min-height: 100vh;
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 button {
-    font-family: var(--font-family);
-    padding: 0;
-    cursor: pointer;
+  font-family: var(--font-family);
+  padding: 0;
+  cursor: pointer;
 }
 
 input {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
 ::placeholder {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
+}
+
+::selection {
+  background: rgba(0, 194, 255, 0.24);
+  color: var(--text-color);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
 ::-webkit-scrollbar {
-    width: 16px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    // background: red;
-    background: transparent;
-    // margin-block: 100px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
-    border-radius: 100vw;
+  background-color: rgba(0, 194, 255, 0.72);
+  border-radius: 100vw;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba($color: #00b9ff, $alpha: 0.75);
+  background-color: rgba(0, 194, 255, 0.92);
 }

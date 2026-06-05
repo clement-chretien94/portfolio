@@ -1,5 +1,4 @@
 section {
-    margin-top: 256px;
-    width: 80vw;
-    max-width: 1246px;
+  margin-top: var(--section-gap);
+  width: min(var(--page-max-width), calc(100vw - (var(--content-padding) * 2)));
 }

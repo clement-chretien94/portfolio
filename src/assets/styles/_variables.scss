@@ -1,6 +1,21 @@
 :root {
-    --primary: #00b9ff;
-    --bg-color : #0b0f10;
-    --text-color: #c5c6c7;
-    --font-family: 'Poppins', sans-serif;
+  --primary: #00c2ff;
+  --primary-soft: #8cecff;
+  --bg-color: #070b10;
+  --bg-color-alt: #0b1520;
+  --surface-color: #101a27;
+  --surface-strong: #152233;
+  --text-color: #d8e4ee;
+  --text-muted: rgba(216, 228, 238, 0.74);
+  --border-color: rgba(138, 194, 233, 0.16);
+  --border-strong: rgba(0, 194, 255, 0.48);
+  --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.28);
+  --shadow-strong: 0 30px 70px rgba(0, 0, 0, 0.45);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --page-max-width: 1246px;
+  --content-padding: 24px;
+  --section-gap: clamp(112px, 12vw, 176px);
+  --font-family: "Poppins", sans-serif;
 }

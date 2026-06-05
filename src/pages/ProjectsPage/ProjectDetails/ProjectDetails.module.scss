@@ -1,73 +1,114 @@
 .backspaceBtn {
-    margin: 16px;
-    background-color: transparent;
-    border-radius: 100px;
-    border: none;
-    width: 58px;
-    height: 58px;
-    path {
-        fill: var(--primary);
-        stroke: var(--primary);
-    }
+  margin: 8px 0 24px;
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+
+  &:hover {
+    transform: translateX(-2px);
+    border-color: rgba(0, 194, 255, 0.35);
+    background: rgba(0, 194, 255, 0.08);
+  }
+
+  path {
+    fill: var(--primary);
+    stroke: var(--primary);
+  }
 }
 
 .projectTitle {
-    margin: -58px 0 64px;
-    font-size: 64px;
-    font-weight: 700;
-    color: var(--primary);
-    text-align: center;
+  margin: 0 0 24px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: left;
+  letter-spacing: -0.03em;
 }
 
 .projectInfo {
-    display: flex;
+  display: grid;
+  grid-template-columns: minmax(280px, 520px) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  padding: clamp(24px, 3vw, 32px);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(0, 194, 255, 0.1), transparent 45%),
+    rgba(12, 19, 29, 0.9);
+  border: 1px solid rgba(0, 194, 255, 0.18);
+  box-shadow: var(--shadow-strong);
 
-    align-items: center;
+  .projectImage {
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-strong);
+    object-fit: cover;
+    object-position: center top;
+  }
 
-    .projectImage {
-        margin: 0 64px 0 64px;
-        width: 548.58px;
-        height: 308.5px;
-        border-radius: 25px;
-        object-fit: cover;
-        object-position: center top;
+  .projectInfoDetails {
+    display: grid;
+    gap: 12px;
+
+    p {
+      margin: 0;
+      font-size: clamp(1rem, 1.6vw, 1.3rem);
+      font-weight: 600;
+      color: var(--text-muted);
+
+      .projectDate {
+        color: var(--primary);
+      }
     }
 
-    .projectInfoDetails {
-
-        p {
-            font-size: 32px;
-            font-weight: 600;
-            margin-top: 0;
-            margin-bottom: 16px;
-
-            .projectDate {
-                color: var(--primary);
-            }
-        }
-
-        .projectMakeWith {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+    .projectMakeWith {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
+  }
 }
 
 .projectDescription {
-    h2 {
-        font-size: 45px;
-        font-weight: 600;
-        text-align: center;
-        margin: 64px 0;
-    }
-    
-    p {
-        margin: 0;
-        margin-bottom: 32px;
-        padding: 0 64px;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: justify;
-    }
+  margin-top: 24px;
+  padding: 28px 32px;
+  border-radius: 28px;
+  border: 1px solid var(--border-color);
+  background: rgba(8, 14, 22, 0.6);
+  box-shadow: var(--shadow-soft);
+
+  h2 {
+    margin: 0 0 32px;
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    font-weight: 700;
+    text-align: left;
+  }
+
+  p {
+    margin: 0 0 32px;
+    padding: 0 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--text-muted);
+  }
+}
+
+@media (max-width: 900px) {
+  .projectInfo {
+    grid-template-columns: 1fr;
+  }
 }

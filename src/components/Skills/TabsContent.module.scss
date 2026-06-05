@@ -1,7 +1,7 @@
 .tabsContent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
   justify-items: center;
 
   .element {
@@ -10,25 +10,37 @@
     align-items: center;
     flex-direction: column;
 
-    background-color: var(--text-color);
-    width: 200px;
-    height: 147px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: 100%;
+    min-height: 156px;
+    padding: 24px 18px;
+    border-radius: 22px;
+    background: linear-gradient(
+      180deg,
+      rgba(16, 26, 39, 0.96),
+      rgba(10, 15, 22, 0.96)
+    );
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      border-color: rgba(0, 194, 255, 0.3);
+      box-shadow: 0 18px 42px rgba(0, 194, 255, 0.08);
     }
 
     img {
-      height: 48px;
+      height: 46px;
       margin-bottom: 16px;
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 1rem;
       font-weight: 600;
-      color: var(--bg-color);
+      color: var(--text-color);
       text-align: center;
       margin: 0;
     }
@@ -38,15 +50,15 @@
 // Version responsive
 @media (max-width: 768px) {
   .tabsContent {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
 
     .element {
-      width: 180px;
-      height: 130px;
+      min-height: 136px;
+      padding: 20px 14px;
 
       h3 {
-        font-size: 16px;
+        font-size: 0.95rem;
       }
 
       img {
@@ -62,7 +74,7 @@
 
     .element {
       width: 100%;
-      max-width: 280px;
+      max-width: 320px;
     }
   }
 }
