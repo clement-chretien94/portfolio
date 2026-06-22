@@ -10,15 +10,40 @@ function AboutMe() {
       </div>
 
       <div className={styles.content}>
-        <p>
-          Je m'appelle Clément et j'aime développer toutes sortes de projets
-          afin de me perfectionner et d'apprendre de nouvelles technologies.
-          J'ai découvert le développement en 2019 en m'intéressant au
-          développement de jeux vidéos avec Unity puis je me suis formé au
-          développement web et mobile en prenant plusieurs cours. C'est cela qui
-          m'a donner envie de rejoindre le BUT Informatique afin de me former
-          davantage et d'en faire mon métier.
-        </p>
+        <div className={styles.aboutText}>
+          <p>
+            Je m'appelle Clément et j'aime développer toutes sortes de projets
+            afin de me perfectionner et d'apprendre de nouvelles technologies.
+            Ayant découvert la programmation en 2019 via le développement de
+            jeux vidéo avec <strong>Unity</strong>, je me suis ensuite formé au
+            développement web et mobile. C'est cette curiosité qui m'a poussé à
+            rejoindre le <strong>BUT Informatique</strong> pour me structurer et
+            me former davantage.
+          </p>
+          <br />
+          <p>
+            Ce cursus m'a permis d'acquérir de solides bases techniques
+            (algorithmique, bases de données, architectures web et mobile) et
+            des compétences transverses (gestion de projet, droit,
+            communication) indispensables à ma future carrière. Plus important
+            encore, mon stage et mon alternance ont été déterminants dans la
+            construction de mon <strong>identité professionnelle</strong>. Ils
+            m'ont confronté à de vrais défis d'entreprise, allant de
+            l'optimisation d'infrastructures à l'exploration de nouvelles
+            architectures, confirmant mon attrait pour les environnements
+            techniques complexes. Je cultive d'ailleurs cette polyvalence sur
+            mon temps libre à travers des projets personnels ciblés.
+          </p>
+          <br />
+          <p>
+            C'est avec cette volonté de lier apprentissage théorique de haut
+            niveau et projets concrets que je vais poursuivre mes études à l'
+            <strong>ENSIMAG</strong> à la rentrée. En parallèle, j'effectuerai
+            mon apprentissage chez <strong>BNP Paribas</strong>, une opportunité
+            idéale pour spécialiser mon profil en développement logiciel tout en
+            évoluant dans un secteur économique et financier qui me passionne.
+          </p>
+        </div>
         <img src={pictureOfMe} alt="Me" />
       </div>
     </section>

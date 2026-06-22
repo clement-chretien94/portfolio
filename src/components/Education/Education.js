@@ -12,10 +12,34 @@ function Education() {
         <h2>Expérience professionel</h2>
         <div className={styles.part1}>
           <h3>Alternance en développement Informatique</h3>
-          <h4>DN CONSULTANTS // Septembre 2025 - En cours</h4>
+          <h4>BNP PARIBAS // Septembre 2026 - En cours</h4>
           <ul>
             <li>
-              • Développement d'une solution de traitement des données
+              Développement full-stack d'évolutions applicatives pour un module
+              de consolidation des données de risque de crédit.
+            </li>
+            <li>
+              Conception de solutions techniques (modélisation des données,
+              création d'API, workflows) et recueil des besoins auprès des
+              métiers.
+            </li>
+            <li>
+              Mise en place de tests (unitaires, intégration, UAT) dans le
+              strict respect des bonnes pratiques de qualité logicielle.
+            </li>
+            <li>
+              Participation aux déploiements en production et à
+              l'industrialisation dans une approche DevOps au sein d'un
+              environnement Agile Scrum.
+            </li>
+          </ul>
+        </div>
+        <div className={styles.part1}>
+          <h3>Alternance en développement Informatique</h3>
+          <h4>DN CONSULTANTS // Septembre 2025 - Août 2026</h4>
+          <ul>
+            <li>
+              Développement d'une solution de traitement des données
               touristiques
             </li>
           </ul>
@@ -25,18 +49,28 @@ function Education() {
           <h4>ATOS // Avril 2025 - Juin 2025</h4>
           <ul>
             <li>
-              • Développement d'un outil d'analyse de consommation énergétique
+              Développement d'un outil d'analyse de consommation énergétique
               propulsé par IA
             </li>
           </ul>
         </div>
         <h2>Formation</h2>
         <div className={styles.part1}>
-          <h3>BUT Informatique</h3>
-          <h4>IUT ROBERT SCHUMAN // 2023 - En cours</h4>
+          <h3>Diplôme d'ingénieur</h3>
+          <h4>Grenoble INP - Ensimag, UGA // 2026 - En cours</h4>
           <ul>
             <li>
-              • BUT Informatique, Parcours : Réalisation d'applications :
+              Ingénieur de Grenoble INP - Ensimag, filière en apprentissage
+              Informatique et système d'information
+            </li>
+          </ul>
+        </div>
+        <div className={styles.part1}>
+          <h3>BUT Informatique</h3>
+          <h4>IUT ROBERT SCHUMAN // 2023 - 2026</h4>
+          <ul>
+            <li>
+              BUT Informatique, Parcours : Réalisation d'applications :
               conception, développement, validation
             </li>
           </ul>
@@ -46,7 +80,7 @@ function Education() {
           <h4>LYCÉE EDOUARD BRANLY // 2023</h4>
           <ul>
             <li>
-              • Obtention du Baccalauréat Géneral, Spécialités Mathématiques et
+              Obtention du Baccalauréat Géneral, Spécialités Mathématiques et
               Physique - Chimie, Mention Bien
             </li>
           </ul>
@@ -55,9 +89,7 @@ function Education() {
           <h3>Diplôme National du Brevet</h3>
           <h4>COLLÈGE EDOUARD BRANLY // 2020</h4>
           <ul>
-            <li>
-              • Obtention du Diplôme National du Brevet, Mention Très Bien
-            </li>
+            <li>Obtention du Diplôme National du Brevet, Mention Très Bien</li>
           </ul>
         </div>
       </div>
