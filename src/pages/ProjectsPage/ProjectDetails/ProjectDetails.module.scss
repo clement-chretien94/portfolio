@@ -149,3 +149,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .projectDescription {
+    padding: 22px 20px;
+
+    p {
+      padding: 0;
+      text-align: left;
+    }
+  }
+}

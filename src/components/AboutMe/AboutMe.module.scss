@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixins;
+
 .aboutMe {
   padding: clamp(28px, 3vw, 40px);
   border-radius: 28px;
@@ -58,6 +60,19 @@
       border-radius: 24px;
       border: 1px solid var(--border-color);
       box-shadow: var(--shadow-strong);
+    }
+  }
+
+  @include mixins.md-lt {
+    .content {
+      grid-template-columns: 1fr;
+      gap: 24px;
+
+      img {
+        justify-self: center;
+        width: 100%;
+        max-width: 320px;
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixins;
+
 .header {
   background: rgba(7, 11, 16, 0.76);
   position: fixed;
@@ -26,6 +28,7 @@
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
     transition:
       transform 0.2s ease,
       border-color 0.2s ease,
@@ -44,7 +47,44 @@
   }
 }
 
-.header nav {
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+
+  span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--text-color);
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  &:hover {
+    border-color: var(--border-strong);
+    background: rgba(0, 194, 255, 0.08);
+  }
+
+  @include mixins.md-lt {
+    display: flex;
+  }
+}
+
+.header .nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -53,7 +93,7 @@
   margin-left: auto;
 }
 
-.header nav a {
+.header .nav a {
   color: var(--text-muted);
   font-size: 14px;
   font-weight: 500;
@@ -83,5 +123,64 @@
     transform: translateY(-1px);
     background: rgba(0, 194, 255, 0.18);
     border-color: var(--primary);
+  }
+}
+
+@include mixins.md-lt {
+  .header .nav {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-left: 0;
+    padding: 16px;
+    border-radius: 24px;
+    background: rgba(7, 11, 16, 0.94);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-strong);
+    backdrop-filter: blur(18px);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      max-height 0.25s ease,
+      opacity 0.2s ease;
+  }
+
+  .header .nav a {
+    width: 100%;
+    padding: 12px 8px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .header .nav.navOpen {
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .cv {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .burger.burgerOpen span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .burger.burgerOpen span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.burgerOpen span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
 }
