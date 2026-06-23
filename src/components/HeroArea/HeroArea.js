@@ -9,7 +9,8 @@ function HeroArea() {
       <h2>I love learning new things</h2>
       <p>
         Je suis étudiant en 3ème année de BUT Informatique en alternance et
-        j'aime apprendre de nouvelles technologies et outils.
+        futur éléve-ingénieur à l'ENSIMAG en alternance. Je suis passionné par
+        le développement logiciel et les nouvelles technologies.
         <br />
         J'aime réaliser des projets personnels pour améliorer mes compétences et
         découvrir de nouvelles technologies.

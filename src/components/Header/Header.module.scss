@@ -1,4 +1,4 @@
-header {
+.header {
   background: rgba(7, 11, 16, 0.76);
   position: fixed;
   top: 16px;
@@ -44,7 +44,7 @@ header {
   }
 }
 
-header nav {
+.header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -53,11 +53,7 @@ header nav {
   margin-left: auto;
 }
 
-header nav a:hover {
-  color: var(--primary);
-}
-
-header nav a {
+.header nav a {
   color: var(--text-muted);
   font-size: 14px;
   font-weight: 500;

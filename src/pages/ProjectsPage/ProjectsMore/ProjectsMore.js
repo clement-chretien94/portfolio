@@ -34,10 +34,15 @@ function ProjectsMore() {
 
         <div className={styles.headerBody}>
           <div className={styles.copy}>
-            <h1>Projets selectionnes pour raconter un parcours clair.</h1>
+            <h1>Mes projets</h1>
             <p>
-              Des cartes denses, une lecture rapide et un focus sur les details
-              qui comptent: contexte, stack et impact.
+              Bienvenue dans ma galerie de projets ! Ici, vous trouverez une
+              sélection de mes réalisations, allant de projets personnels à des
+              travaux académiques. Chaque projet est une opportunité pour moi de
+              mettre en pratique mes compétences en développement et de relever
+              de nouveaux défis. N'hésitez pas à explorer et à découvrir les
+              différentes technologies et outils que j'ai utilisés pour donner
+              vie à ces idées.
             </p>
           </div>
 

@@ -1,41 +1,62 @@
 .projectTag {
-  margin-left: 0;
-  padding: 10px 14px;
-  font-size: 0.9rem;
-  color: #071018;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+  box-shadow: var(--shadow-soft);
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--tag-color, var(--primary));
+  }
+
+  &:hover {
+    border-color: rgba(0, 194, 255, 0.35);
+    background: rgba(0, 194, 255, 0.08);
+  }
 }
 
 .electron {
-  background-color: #74cb6c;
+  --tag-color: #74cb6c;
 }
 
 .react {
-  background-color: #61dafb;
+  --tag-color: #61dafb;
 }
 
 .javascript {
-  background-color: #f7e018;
+  --tag-color: #f7e018;
 }
 
 .html {
-  background-color: #eb5a25;
+  --tag-color: #eb5a25;
 }
 
 .css {
-  background-color: #264de4;
+  --tag-color: #4d7bff;
 }
 
 .csharp {
-  background-color: #690081;
+  --tag-color: #b35ce0;
 }
 
 .figma {
-  background: linear-gradient(276.79deg, #a259ff 0%, #0acf83 94.62%);
+  --tag-color: linear-gradient(276.79deg, #a259ff 0%, #0acf83 94.62%);
 }
 
 .unity {
-  background: linear-gradient(276.79deg, #ff0000 0%, #7cfc00 94.62%);
+  --tag-color: linear-gradient(276.79deg, #ff0000 0%, #7cfc00 94.62%);
 }
