@@ -51,9 +51,6 @@ function Header() {
         <a href="#projects" onClick={closeMenu}>
           Projets
         </a>
-        <a href="#contact" onClick={closeMenu}>
-          Contact
-        </a>
         <a
           href="/clement_chretien.pdf"
           target="_blank"

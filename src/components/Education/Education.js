@@ -85,13 +85,6 @@ function Education() {
             </li>
           </ul>
         </div>
-        <div className={styles.part2}>
-          <h3>Diplôme National du Brevet</h3>
-          <h4>COLLÈGE EDOUARD BRANLY // 2020</h4>
-          <ul>
-            <li>Obtention du Diplôme National du Brevet, Mention Très Bien</li>
-          </ul>
-        </div>
       </div>
     </section>
   );
