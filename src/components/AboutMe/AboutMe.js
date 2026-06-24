@@ -44,7 +44,7 @@ function AboutMe() {
             évoluant dans un secteur économique et financier qui me passionne.
           </p>
         </div>
-        <img src={pictureOfMe} alt="Me" />
+        <img src={pictureOfMe} alt="Clément Chrétien" width="400" height="400" loading="lazy" />
       </div>
     </section>
   );

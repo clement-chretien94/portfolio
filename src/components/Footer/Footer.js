@@ -7,6 +7,7 @@ function Footer() {
       <div className={styles.socialMedia}>
         <a
           href="https://github.com/clement-chretien94"
+          alt="GitHub"
           target="_blank"
           rel="noreferrer"
         >
@@ -26,6 +27,7 @@ function Footer() {
         </a>
         <a
           href="https://www.linkedin.com/in/cl%C3%A9ment-chr%C3%A9tien-b9704024b"
+          alt="LinkedIn"
           target="_blank"
           rel="noreferrer"
         >

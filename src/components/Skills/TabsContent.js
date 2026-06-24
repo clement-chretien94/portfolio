@@ -18,67 +18,67 @@ function TabsContent({ selected }) {
     return (
       <div className={styles.tabsContent}>
         <div className={styles.element}>
-          <img src={reactLogo} alt="React Logo" />
+          <img src={reactLogo} alt="React Logo" loading="lazy" />
           <h3>React</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={vueLogo} alt="Vue.js Logo" />
+          <img src={vueLogo} alt="Vue.js Logo" loading="lazy" />
           <h3>Vue.js</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={reactLogo} alt="React Native Logo" />
+          <img src={reactLogo} alt="React Native Logo" loading="lazy" />
           <h3>React Native</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={nextjsLogo} alt="Next.js Logo" />
+          <img src={nextjsLogo} alt="Next.js Logo" loading="lazy" />
           <h3>Next.js</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={djangoLogo} alt="Django Logo" />
+          <img src={djangoLogo} alt="Django Logo" loading="lazy" />
           <h3>Django</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={symfonyLogo} alt="Symfony Logo" />
+          <img src={symfonyLogo} alt="Symfony Logo" loading="lazy" />
           <h3>Symfony</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={typescriptLogo} alt="TypeScript Logo" />
+          <img src={typescriptLogo} alt="TypeScript Logo" loading="lazy" />
           <h3>TypeScript</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={javascriptLogo} alt="JavaScript Logo" />
+          <img src={javascriptLogo} alt="JavaScript Logo" loading="lazy" />
           <h3>JavaScript</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={tailwindLogo} alt="TailwindCSS Logo" />
+          <img src={tailwindLogo} alt="TailwindCSS Logo" loading="lazy" />
           <h3>TailwindCSS</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={htmlLogo} alt="HTML Logo" />
+          <img src={htmlLogo} alt="HTML Logo" loading="lazy" />
           <h3>HTML</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={cssLogo} alt="CSS Logo" />
+          <img src={cssLogo} alt="CSS Logo" loading="lazy" />
           <h3>CSS</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={javaLogo} alt="Java Logo" />
+          <img src={javaLogo} alt="Java Logo" loading="lazy" />
           <h3>Java</h3>
         </div>
 
         <div className={styles.element}>
-          <img src={csharpLogo} alt="C# Logo" />
+          <img src={csharpLogo} alt="C# Logo" loading="lazy" />
           <h3>C#</h3>
         </div>
       </div>
@@ -87,7 +87,7 @@ function TabsContent({ selected }) {
     return (
       <div className={styles.tabsContent}>
         <div className={styles.element}>
-          <img src={figmaLogo} alt="Figma Logo" />
+          <img src={figmaLogo} alt="Figma Logo" loading="lazy" />
           <h3>Figma</h3>
         </div>
       </div>

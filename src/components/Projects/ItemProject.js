@@ -7,7 +7,7 @@ function ItemProject({title, image}) {
     return (
         <div onClick={() => navigate(`/projects/${title}`)} className={styles.itemProject}>
             <div className={styles.imageProject}>
-                <img src={image} alt="project"/>
+                <img src={image} alt={title} loading="lazy" />
             </div>
             <span>{title}</span>
         </div>

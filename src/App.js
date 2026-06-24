@@ -1,9 +1,12 @@
+import { Suspense } from 'react';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Outlet/>
+      <Suspense fallback={null}>
+        <Outlet/>
+      </Suspense>
       <ScrollRestoration/>
     </>
   )
